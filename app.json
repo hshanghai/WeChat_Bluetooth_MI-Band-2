@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#393a3f",
+    "navigationBarTitleText": "车载助手",
+    "navigationBarTextStyle":"#fff",
+    "backgroundColor":"#f1f1f1",
+    "enablePullDownRefresh":false
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000
+  }
+}
