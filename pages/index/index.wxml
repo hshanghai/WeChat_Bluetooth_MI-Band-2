@@ -1,28 +1,10 @@
-<view class="can_box">
-    <button type="{{button_type}}" size="default" bindtap="can_str">{{button_text}}</button>
-</view>
-<view class="devices_data" wx:if="{{devices_data}}">
-    <view class="devices devices_name"><text>设备名称</text>{{devices_data.name}}</view>
-    <view class="devices devices_id"><text>设备ID</text>{{devices_data.deviceId}}</view>
-    <view class="devices devices_id"><text>设备剩余电量</text>{{electricity_data_surplus}}</view>
-</view>
-<view class="control_box" wx:if="{{devices_data}}">
-    <view class="control_link">
-        <view class="steps_data_count">{{steps_data_count}}<text>步</text></view>
-    </view>
-    <view class="control_link">
-        <button bindtap="steps_control">读取步数</button>
-    </view>
-    <view class="control_link">
-        <button bindtap="steps_realtime_control">实时步数</button>
-    </view>
-    <view class="control_link">
-        <button bindtap="shock_control" data-strength="0x03">发送小震动</button>
-    </view>
-    <view class="control_link">
-        <button bindtap="shock_control" data-strength="0x02">发送大震动</button>
-    </view>
-    <view class="control_link">
-        <button bindtap="electricity_control">读取电量信息</button>
-    </view>
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto" bindtap="bindViewTap1">
+    <text class="user-motto"> </text>
+  </view>
 </view>
